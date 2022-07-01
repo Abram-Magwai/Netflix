@@ -3,10 +3,12 @@
   margin: 0;
 }
 html {
-  background-color: black;
   color: #fff;
   font-family:  'Helvetica', Arial, sans-serif;
   overflow: hidden;
+}
+.main-container {
+  background-color: black;
 }
 .background-container {
   background: url(../assets/images/background.jpg);
@@ -18,8 +20,9 @@ html {
 }
 .logo-container {
   position: absolute;
+  box-sizing: border-box;
   top: -20px;
-  padding-left: 20px;
+  padding: 0px 20px;
   height: 130px;
   width: fit-content;
 }
@@ -111,4 +114,67 @@ a:hover {
     width: 100%;
     margin: 0 0px;
   }
+}
+
+/* Email styles */
+#logo-container {
+  display: flex;
+   justify-content: space-between;
+   width: 100%;
+   align-items: center;
+}
+.logo-container a{
+  background-color: #e50914;
+  color: #fff;
+  padding: 12px 15px !important;
+  border-radius: 5px;
+}
+.info-blog {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-blog div {
+  margin-top: 60px;
+  width: 650px;
+}
+.info-blog div h1, h2, h3 {
+  text-align: center;
+}
+.info-blog div h1 {
+  font-size: 60px;
+}
+.info-blog div h2 {
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 200;
+}
+.info-blog div h3 {
+  font-weight: 600;
+}
+.info-blog div div {
+  margin-top: 10px;
+  height: 60px;
+  display: flex;
+  width: 100%;
+}
+.info-blog div div > * {
+  height: 100%;
+}
+.info-blog div div input {
+  flex: 2;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.info-blog div div a {
+  flex: 1;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e50914;
 }
