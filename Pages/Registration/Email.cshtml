@@ -1,0 +1,48 @@
+@page
+@model EmailModel
+
+<!Doctype html>
+<html>
+
+<head>
+    <title>
+        Netflix
+    </title>
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="background-container"></div>
+        <div class="logo-container" id="logo-container">
+            <img src="~/assets/images/logo.png" alt="Netflix logo">
+            <a href="/auth" class="signin-btn">Sign In</a>
+        </div>
+
+        <div class="info-blog">
+            <div>
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                <form method="post" action="">
+                    <div>
+                        <input type="email" name="email" id="email" value="@Model.Email" placeholder="Email address">
+                        <button type="submit" href="registration">Get Started ></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementsByTagName("button")[0];;
+        btn.addEventListener("click", () => {
+            var email = document.getElementById("email").value;
+            if (email != undefined) {
+                localStorage.setItem("email", email);
+            }
+        })
+
+    </script>
+</body>
+
+</html>

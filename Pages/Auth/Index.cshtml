@@ -1,0 +1,51 @@
+﻿@page
+
+<!Doctype html>
+<html>
+
+<head>
+    <title>
+        Netflix Login Page
+    </title>
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="background-container"></div>
+        <div class="logo-container">
+            <img src="~/assets/images/logo.png" alt="Netflix logo">
+        </div>
+        <div class="login-form-container">
+            <h1>Sign In</h1>
+
+            <div class="form-input">
+                <input type="email" name="Email" id="email" placeholder="Email or phone number">
+            </div>
+            <div class="form-input">
+                <input type="password" name="Password" id="password" placeholder="Password">
+            </div>
+            <input type="submit" value="Sign In">
+
+            <div id="remember">
+                <div>
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div>
+                    <a href="#">Need help?</a>
+                </div>
+
+            </div>
+            <div class="login-form-footer">
+                <span>New to Netflix? <a href="registration/email">Sign up now</a></span>
+                <div class="form-info">
+                    <span>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

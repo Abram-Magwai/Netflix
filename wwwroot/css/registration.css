@@ -18,6 +18,7 @@
     font-weight: bold;
 }
 .new-info-blog {
+    height: 80vh;
     margin-top: -50px !important;
 }
 .info-blog p {
@@ -33,21 +34,75 @@
     margin-top: 0px !important;
     width: 320px !important;
 }
-.reg-info h1{
+#info-h1{
     margin: 10px 0 10px;
     font-size: 30px !important;
     color: #333333;
 }
-.reg-info span {
+#info-span {
     display: flex;
     text-align: center;
     font-size: 20px;
     color: #333333;
 }
-#next {
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
+    height: 100%;
     width: 100%;
     background-color: #e50914;
     color: #fff;
     border-radius: 5px;
+}
+
+/* Register */
+.form-blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.reg-form-blog {
+    padding-top: 30px;
+    width: 450px;
+}
+#reg-form-title {
+    font-size: 32px;
+    text-align: left;
+    line-height: 50px;
+    color: #333333;
+}
+.form-text {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight:100;
+    color: #333333;
+}
+.reg-form-blog .form-field{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    background-color: red;
+}
+.reg-form-blog .form-field input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    padding-left: 5px;
+    font-size: 20px;
+    outline: none;
+}
+#special {
+    display: flex;
+    align-items: center;
+}
+#special label {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 100 !important;
+}
+#cb {
+    zoom:2;
+    border-radius: 0;
 }

@@ -7,8 +7,9 @@ html {
   font-family:  'Helvetica', Arial, sans-serif;
   overflow: hidden;
 }
-.main-container {
+.main-body {
   background-color: black;
+  z-index: -1;
 }
 .background-container {
   background: url(../assets/images/background.jpg);
@@ -16,7 +17,7 @@ html {
   width: 100vw;
   opacity: 0.5;
   position: absolute;
-  z-index: -1
+  z-index: 0;
 }
 .logo-container {
   position: absolute;
@@ -136,6 +137,7 @@ a:hover {
   align-items: center;
 }
 .info-blog div {
+  z-index: 1;
   margin-top: 60px;
   width: 650px;
 }
@@ -167,9 +169,11 @@ a:hover {
   box-sizing: border-box;
   padding-left: 10px;
   font-size: 20px;
+  outline: none;
 }
-.info-blog div div a {
+.info-blog div div button {
   flex: 1;
+  border: none;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
