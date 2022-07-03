@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cvm3J740kxW8jlru2M2ZJsgGV2OA+7NPkLbgj7FQ+0k=",
+  "Hash": "9oQqGhxpWlv9/TY15W90DK++Pp6JzzB7qkxLkaliF74=",
   "Source": "Netflix",
   "BasePath": "_content/Netflix",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\background.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\The_Gost\\Desktop\\Netflix\\wwwroot\\assets\\images\\Checkmark.png",
+      "SourceId": "Netflix",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\The_Gost\\Desktop\\Netflix\\wwwroot\\",
+      "BasePath": "_content/Netflix",
+      "RelativePath": "assets/images/Checkmark.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\Checkmark.png"
     },
     {
       "Identity": "C:\\Users\\The_Gost\\Desktop\\Netflix\\wwwroot\\assets\\images\\Devices.png",

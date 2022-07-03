@@ -12,7 +12,7 @@ namespace Netflix.Pages.Registration
         public void OnGet(){}
         public IActionResult OnPost() {
             if(!string.IsNullOrWhiteSpace(Email) && !string.IsNullOrWhiteSpace(Password)) {
-                return RedirectToPage("index");
+                return RedirectToPage("signup");
             }
             return Page();
         }

@@ -106,3 +106,158 @@
     zoom:2;
     border-radius: 0;
 }
+/* signup */
+.signup-blog {    
+    color: #333333;
+    display: flex;
+    justify-content: center;
+}
+.signup-body {
+    margin-top: 120px;
+    width: 350px;
+}
+#check-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.signup-body p, h1 {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.signup-body a {
+    font-size: 25px;
+}
+.rules {
+    margin-top: 20px;
+}
+.rule {
+    display: flex;
+    margin: 18px 0;
+}
+.tick {
+    color: #e50914;
+}
+.rule div:last-child {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.rules .next {
+    margin-top: 50px;
+    height: 70px;
+}
+/* planform */
+.plan-container {
+    display: flex;
+    justify-content: center;    
+    color: #333333;
+    overflow: visible !important;
+}
+.plan-header h1{
+    text-align: left;
+}
+.plan-header .rule {
+    margin: 12px 0 !important;
+}
+.plan-content {
+    width: 1100px;
+}
+.plans-container.main-title {
+    top: 5px;
+    position: sticky;
+}
+.plans-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 150px;
+    width: 100%;
+}
+.plan {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #e50914;
+    margin: 0 15px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+    width: 150px;
+    opacity: 0.6;
+}
+.plan.active {
+    opacity: 1;
+}
+.plans-info {
+    position: relative;
+    margin-top: 20px;
+    height: 50px !important;
+    border-bottom: 1px solid lightgray;
+}
+.description {
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.price {
+    margin:0 15px;
+    color: #737373;
+    font-weight: bold;
+    font-size: 18px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price.active {
+    color: #e50914;
+}
+.device-container {
+    position: relative;
+    height: fit-content !important;
+}
+.description.device {
+    top: 0 !important;
+    font-weight: normal;
+    color: #333333;
+    font-size: 18px;
+}
+.devices {
+    height: fit-content !important;
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+}
+.device {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px 0;
+    font-size: 15px;
+    font-weight:bold;
+}
+.devices.active > svg {
+    color: #e50914;
+}
+.plan-body p {
+    margin: 20px 0;
+    max-width: 850px;
+    color: #737373;
+    font-size: 13px;
+}
+#next-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#next-container a{
+    width: 500px;
+    height: 70px;
+    margin: 15px 0;
+    font-size: 25px;
+}

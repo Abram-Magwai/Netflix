@@ -8,37 +8,45 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Netflix
 build_property.RootNamespace = Netflix
-build_property.ProjectDir = c:\Users\The_Gost\Desktop\Netflix\
+build_property.ProjectDir = C:\Users\The_Gost\Desktop\Netflix\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\The_Gost\Desktop\Netflix
+build_property.MSBuildProjectDirectory = C:\Users\The_Gost\Desktop\Netflix
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/The_Gost/Desktop/Netflix/Pages/Auth/Index.cshtml]
+[C:/Users/The_Gost/Desktop/Netflix/Pages/Auth/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/The_Gost/Desktop/Netflix/Pages/Index.cshtml]
+[C:/Users/The_Gost/Desktop/Netflix/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/The_Gost/Desktop/Netflix/Pages/Registration/Email.cshtml]
+[C:/Users/The_Gost/Desktop/Netflix/Pages/Registration/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXEVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/The_Gost/Desktop/Netflix/Pages/Registration/Index.cshtml]
+[C:/Users/The_Gost/Desktop/Netflix/Pages/Registration/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/The_Gost/Desktop/Netflix/Pages/Registration/Register.cshtml]
+[C:/Users/The_Gost/Desktop/Netflix/Pages/Registration/PlanForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXFBsYW5Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/The_Gost/Desktop/Netflix/Pages/Registration/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/The_Gost/Desktop/Netflix/Pages/Shared/_RegistrationLayout.cshtml]
+[C:/Users/The_Gost/Desktop/Netflix/Pages/Registration/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXFNpZ251cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/The_Gost/Desktop/Netflix/Pages/Shared/_RegistrationLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9SZWdpc3RyYXRpb25MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/The_Gost/Desktop/Netflix/Pages/_ViewImports.cshtml]
+[C:/Users/The_Gost/Desktop/Netflix/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
