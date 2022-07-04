@@ -167,6 +167,8 @@
 .plans-container.main-title {
     top: 5px;
     position: sticky;
+    background-color: #fff;
+    z-index: 1;
 }
 .plans-container {
     display: flex;
@@ -260,4 +262,131 @@
     height: 70px;
     margin: 15px 0;
     font-size: 25px;
+}
+
+/* payment picker */
+.picker-container {
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.picker-container img {
+    margin-bottom: 50px;
+}
+.picker-container h1 {
+    margin: 20px 0;
+}
+.picker-container .info {
+    font-weight: bold;
+    font-size: 20px;
+}
+.payment-type-container {
+    width: 500px;
+    margin-top: 10px;
+}
+.picker-container .secure {
+    display: flex;
+    justify-content: flex-end;
+}
+.payment-type {
+    width: 100%;
+    height: 60px;
+    margin: 5px 0;
+    display: flex;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    border: 3px lightgray solid;
+    border-radius: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.payment-type #first {
+    display: flex;
+    align-items: center;
+}
+.payment-type #payment-info {
+    font-size: 18px;
+}
+.payment-type #card-types {
+    display: flex;
+    height: 100%;
+}
+#card-types img{
+    height: 100%;
+    margin: 0 5px;
+}
+#arrow {
+    height: 100%;
+}
+/* credit option */
+.credit-container {
+    width: 100%;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+}
+.credit-body {
+    width: 460px;
+}
+.credit-body h1 {
+    text-align: left;
+    font-size: 35px;
+    margin: 10px 0;
+}
+.credit-body #card-types {
+    display: flex;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.credit-body .form-field{
+    width: 100%;
+    height: 70px;
+    margin: 20px 0;
+}
+.credit-body .form-field input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    font-size: 18px;
+    height: 100%;
+    outline: none ;
+}
+.plan-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 60px;
+    padding: 10px 15px;
+}
+.plan-info #amount{
+    font-size: 20px;
+    font-weight: bold;
+}
+.plan-info #name {
+    font-size: 20px;
+    color: #737373;
+}
+.plan-info a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0071eb;
+}
+.credit-body span {
+    font-size: 13px;
+    display: block;
+    color: #8c8c8c;
+    margin: 18px 0;
+}
+.credit-body button {
+    font-size: 20px;
+    border: none;
+}
+.credit-body button:hover {
+    background-color: #f6121d;
+}
+.credit-body input[type="checkbox"] {
+    zoom: 3;
+    border: 1px solid #8c8c8c;
 }
