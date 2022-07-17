@@ -14,20 +14,25 @@
         <div class="plan-info">
             <div>
                 <div id="plan-amount">
-                    <p id="amount">R199/month</p>
+                    <p id="amount"></p>
                 </div>
                 <div id="plan-name">
-                    <p id="name">Premium Plan</p>
+                    <p id="name"></p>
                 </div>
             </div>
             <div>
                 <a href="planform">Change</a>
             </div>
         </div>
-        
+
         <div style="height: 60px;margin: 20px 0">
             <button type="submit" class="next">Redeem Gift Code</button>
-        </div>  
-        
+        </div>
+
         <span>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></span>
+    </div>
 </div>
+<script>
+    document.querySelector("#amount").innerHTML = localStorage.getItem("planAmount") + "/month";
+    document.querySelector("#name").innerHTML = localStorage.getItem("planName") + " plan";
+</script>

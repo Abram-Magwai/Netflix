@@ -2,6 +2,7 @@
 @{
     Layout = "_RegistrationLayout";
 }
+
 <div class="credit-container">
     <div class="credit-body">
         <p>STEP <b>3</b> OF <b>3</b></p>
@@ -28,10 +29,10 @@
         <div class="plan-info">
             <div>
                 <div id="plan-amount">
-                    <p id="amount">R199/month</p>
+                    <p id="amount"></p>
                 </div>
                 <div id="plan-name">
-                    <p id="name">Premium Plan</p>
+                    <p id="name"></p>
                 </div>
             </div>
             <div>
@@ -56,3 +57,7 @@
         </div>
     </div>
 </div>
+<script>
+    document.querySelector("#amount").innerHTML = localStorage.getItem("planAmount") + "/month";
+    document.querySelector("#name").innerHTML = localStorage.getItem("planName") + " plan";
+</script>

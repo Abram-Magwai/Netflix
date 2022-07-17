@@ -226,7 +226,8 @@
                 </div>
             </div>
             <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and
-                device capabilities. Not all content is available in all resolutions. See our <a href="#" style="color: #0071eb;">Terms of User</a> for more details.</p>
+                device capabilities. Not all content is available in all resolutions. See our <a href="#"
+                    style="color: #0071eb;">Terms of User</a> for more details.</p>
 
             <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with
                 Premium, 2 with Standard, and 1 with Basic and Mobile.</p>
@@ -238,26 +239,61 @@
     </div>
 
     <script>
-        document.querySelectorAll(".plan").forEach((plan) => {
-            plan.addEventListener("click", () => {
-                Deselect();
 
-                plan.classList.add("active");
-                if (plan.classList.contains("mobile")) {
-                    document.querySelectorAll(".mob").forEach(mob => mob.classList.add("active"))
-                } else if (plan.classList.contains("basic")) {
-                    document.querySelectorAll(".bas").forEach(mob => mob.classList.add("active"))
-                } else if (plan.classList.contains("standard")) {
-                    document.querySelectorAll(".sta").forEach(mob => mob.classList.add("active"))
-                } else if (plan.classList.contains("premium")) {
-                    document.querySelectorAll(".pre").forEach(mob => mob.classList.add("active"))
-                }
+        @* after page has loaded *@
+        var planName = localStorage.getItem("planName");
+        if (planName != null) {
+            Deselect();
+
+            document.querySelector(`.${planName.toLowerCase()}`).classList.add("active");
+            if (planName == "Mobile") {
+                document.querySelectorAll(".mob").forEach(mob => mob.classList.add("active"))
+            } else if (planName == "Basic") {
+                document.querySelectorAll(".bas").forEach(mob => mob.classList.add("active"))
+            } else if (planName == "Standard") {
+                document.querySelectorAll(".sta").forEach(mob => mob.classList.add("active"))
+            } else {
+                document.querySelectorAll(".pre").forEach(mob => mob.classList.add("active"))
+            }
+        }
+
+
+        @* When clicking next button *@
+            document.querySelectorAll(".plan").forEach((plan) => {
+                plan.addEventListener("click", () => {
+                    Deselect();
+
+                    plan.classList.add("active");
+                    if (plan.classList.contains("mobile")) {
+                        document.querySelectorAll(".mob").forEach(mob => mob.classList.add("active"))
+                    } else if (plan.classList.contains("basic")) {
+                        document.querySelectorAll(".bas").forEach(mob => mob.classList.add("active"))
+                    } else if (plan.classList.contains("standard")) {
+                        document.querySelectorAll(".sta").forEach(mob => mob.classList.add("active"))
+                    } else if (plan.classList.contains("premium")) {
+                        document.querySelectorAll(".pre").forEach(mob => mob.classList.add("active"))
+                    }
+                })
             })
-        })
 
         function Deselect() {
             document.querySelectorAll(".active").forEach(x => {
                 x.classList.remove("active");
             })
         }
+
+        document.querySelectorAll("a")[2].addEventListener("click", () => {
+            document.querySelectorAll(".plan").forEach(x => {
+                if (x.classList.contains("active")) {
+                    localStorage.setItem("planName", x.innerHTML);
+                    var prices = document.querySelectorAll(".plans-info")[0].children;
+
+                    for (var price = 0; price < prices.length; price++) {
+                        if (prices[price].classList.contains("active")) {
+                            localStorage.setItem("planAmount", prices[price].innerHTML);
+                        }
+                    }
+                }
+            })
+        })
     </script>
