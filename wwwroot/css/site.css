@@ -12,7 +12,7 @@ html {
   z-index: -1;
 }
 .background-container {
-  background: url(../assets/images/background.jpg);
+  background: url(../assets/images/background.jpg) no-repeat;
   height: 100vh;
   width: 100vw;
   opacity: 0.5;
@@ -105,80 +105,4 @@ a:hover {
 }
 .form-info span{
   color: #8C8C8C;
-}
-
-@media only screen and (max-width: 739px) {
-  .background-container {
-    background: none;
-  }
-  .login-form-container {
-    width: 100%;
-    margin: 0 0px;
-  }
-}
-
-/* Email styles */
-#logo-container {
-  display: flex;
-   justify-content: space-between;
-   width: 100%;
-   align-items: center;
-}
-.logo-container a{
-  background-color: #e50914;
-  color: #fff;
-  padding: 12px 15px !important;
-  border-radius: 5px;
-}
-.info-blog {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.info-blog div {
-  z-index: 1;
-  margin-top: 60px;
-  width: 650px;
-}
-.info-blog div h1, h2, h3 {
-  text-align: center;
-}
-.info-blog div h1 {
-  font-size: 60px;
-}
-.info-blog div h2 {
-  margin: 30px 0;
-  font-size: 30px;
-  font-weight: 200;
-}
-.info-blog div h3 {
-  font-weight: 600;
-}
-.info-blog div div {
-  margin-top: 10px;
-  height: 60px;
-  display: flex;
-  width: 100%;
-}
-.info-blog div div > * {
-  height: 100%;
-}
-.info-blog div div input {
-  flex: 2;
-  box-sizing: border-box;
-  padding-left: 10px;
-  font-size: 20px;
-  outline: none;
-}
-.info-blog div div button {
-  flex: 1;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e50914;
 }
