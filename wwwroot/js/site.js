@@ -1,4 +1,5 @@
-﻿var planName = localStorage.getItem("planName");
+﻿alert("w: "+window.screen.width + "h: "+window.screen.height);
+var planName = localStorage.getItem("planName");
 if(planName != null) {
     Deselect();
 
